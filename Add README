@@ -1,91 +1,101 @@
 E-commerce Profitability & Cost Analysis – A Financial KPI-Driven Portfolio Project
 
-This project simulates an end-to-end analysis of e-commerce business profitability using **SQL** and **Power BI**, tailored to impress **finance-focused recruiters** and demonstrate real-world data thinking.
+This project simulates an end-to-end profitability analysis for an e-commerce business using **SQL** and **Power BI**, tailored for **finance-focused recruiters**. It showcases strong analytical thinking, financial KPIs, and data storytelling that reflect real-world decision-making scenarios.
 
-Goal: Use SQL to uncover financial insights and KPIs that drive e-commerce decision-making: *profit margin, ROI, CAC, revenue trends, returns, and product-level profitability*.
+Goal
 
----
+To extract actionable financial insights using SQL and visualize key performance indicators (KPIs) in Power BI — including **profit margin**, **gross profit**, **return on ad spend (ROAS)**, and **category performance** — just as a financial analyst would.
 
 Tools & Technologies
 
-- **MySQL** – For querying simulated transactional and marketing data
-- **Power BI** – To visualize business performance and financial metrics
-- **Excel 365** – For quick checks, validation, and exports
-- **Git & GitHub** – For version control and portfolio presentation
-
----
+- **MySQL** – For writing advanced SQL queries across normalized tables  
+- **Power BI** – For building interactive dashboards and visual analytics  
+- **Excel 365** – For visual prototyping, export, and cross-validation  
+- **Git & GitHub** – For version control and professional portfolio sharing  
 
 Data Structure (Simulated)
 
-The dataset was designed to reflect realistic business conditions:
+The dataset was designed to reflect common structures in e-commerce platforms:
 
-1. `customers`
-Customer information including signup dates
+| Table | Description |
+|-------|-------------|
+| `customers` | Customer demographics and signup dates |
+| `products` | Product catalog with cost and selling prices |
+| `orders` | Transaction log of product purchases |
+| `returns` | Records of returned products and refund impact |
+| `marketing_spend` | Monthly ad spend by marketing channel |
 
-2. `products`
-Product catalog with cost and pricing details
+Project Objectives
 
-3. `orders`
-Sales transactions showing revenue, quantity, and fulfillment status
-
-4. `returns`
-Returned orders linked to products and dates
-
-5. `marketing_spend`
-Monthly spending by marketing channel (e.g., Facebook, Google Ads)
-
----
-
-##  Project Objectives
-
-- Calculate **monthly revenue, profit, and profit margin**
+- Track **monthly revenue, cost, and profit margins**
+- Evaluate **top-performing product categories**
+- Compare **new vs returning customer contributions**
 - Analyze **product-level profitability**
-- Evaluate **marketing effectiveness (Cost per Acquisition / ROI)**
-- Track **return rates** and their financial impact
-- Visualize **monthly trends** and **high-performing channels or products**
+- Measure **Return on Ad Spend (ROAS)**
+- Build a **Power BI dashboard** to visualize trends and KPIs
 
----
-
-##  Key Metrics & KPIs
+Key Metrics & Financial KPIs
 
 | KPI | Description |
-
-| **Revenue** | Total amount from completed orders |
-| **Cost of Goods Sold (COGS)** | Product cost × quantity sold |
+|-----|-------------|
+| **Revenue** | Total sales from completed orders |
+| **COGS (Cost of Goods Sold)** | Cost × quantity sold |
 | **Gross Profit** | Revenue - COGS |
-| **Profit Margin** | (Profit ÷ Revenue) × 100 |
-| **Return Rate** | Returned orders ÷ total orders |
-| **Cost Per Acquisition (CPA)** | Marketing spend ÷ new customers |
-| **Return on Ad Spend (ROAS)** | Revenue ÷ Marketing spend |
-| **Average Order Value (AOV)** | Revenue ÷ number of orders |
+| **Profit Margin (%)** | (Profit ÷ Revenue) × 100 |
+| **ROAS** | Revenue ÷ Marketing Spend |
+| **AOV (Average Order Value)** | Revenue ÷ No. of Orders |
+| **New vs Returning Revenue** | Customer cohort revenue share |
 
----
+SQL Insights Completed
 
-##  Example SQL Insights (Coming Soon)
+Insight 1: Monthly Revenue, Cost, Profit & Margin
 
->  Product categories with highest profit margins  
->  Months with most return losses  
->  Most cost-efficient marketing channels  
->  Revenue trends pre- and post-campaign periods  
+| Month     | Revenue | Cost  | Profit | Margin % |
+|-----------|---------|-------|--------|----------|
+| 2024-05   | £189.95 | £91.00 | £98.95 | 52.09%   |
+| 2024-06   | £169.95 | £75.00 | £94.95 | 55.87%   |
+| 2024-07   | £45.98  | £20.00 | £25.98 | 56.50%   |
 
----
+Insight 2: Top Product Categories by Month (Ranked)
 
-##  Final Deliverables (Planned)
+| Month     | Category     | Revenue | Rank |
+|-----------|--------------|---------|------|
+| 2024-05   | Electronics  | £149.97 | 1    |
+| 2024-05   | Fitness      | £39.98  | 2    |
+| 2024-06   | Home         | £119.96 | 1    |
+| 2024-06   | Electronics  | £49.99  | 2    |
+| 2024-07   | Electronics  | £45.98  | 1    |
 
--  **Interactive Power BI dashboard**
--  **Portfolio write-up (Medium article & LinkedIn post)**
--  SQL scripts for all insights
--  CSVs / database for recruiter review (optional)
+Insight 3: New vs Returning Customer Revenue
 
----
+| Month     | Customer Type | Revenue |
+|-----------|----------------|---------|
+| 2024-05   | New            | £94.97  |
+| 2024-06   | New            | £82.97  |
+| 2024-07   | New            | £45.98  |
 
+Insight 4: Product-Level Profitability
 
-##  Author
+| Product         | Units Sold | Revenue | Cost  | Gross Profit |
+|------------------|------------|---------|--------|---------------|
+| Wireless Mouse   | 3          | £59.97  | £30.00 | £29.97        |
+| Blender          | 2          | £119.96 | £60.00 | £59.96        |
+| Yoga Mat         | 2          | £39.98  | £20.00 | £19.98        |
+| Headphones       | 1          | £45.98  | £20.00 | £25.98        |
 
-**Nero Ogude**  
-Aspiring Data Analyst | Finance & Business-Focused | SQL • Power BI • Excel  
- Open to mentorships, collaborations & job opportunities
+Insight 5: Marketing ROI (Return on Ad Spend)
 
----
+| Month     | Spend  | Revenue | ROAS |
+|-----------|--------|---------|------|
+| 2024-05   | £250   | £189.94 | 0.76 |
+| 2024-06   | £320   | £165.94 | 0.52 |
+| 2024-07   | £80    | £45.98  | 0.57 |
 
->  *This project was built under the mentorship of a data analytics consultant, using real-world finance recruiter feedback to design a case study that stands out.*
+Insight 6: Average Order Value (AOV) by Month
+
+| Month     | Total Revenue | No. of Orders | AOV |
+|-----------|---------------|---------------|-----|
+| 2024-05   | £189.95       | 4             | £47.49 |
+| 2024-06   | £169.95       | 4             | £42.49 |
+| 2024-07   | £45.98        | 1             | £45.98 |
+
